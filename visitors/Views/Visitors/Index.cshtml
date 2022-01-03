@@ -1,0 +1,90 @@
+﻿@model IEnumerable<visitors.Models.Visitor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.supplierName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.driverName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.vehicleType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.plateNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entryDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.entryTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exitDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.exitTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isVisitor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.driverName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.vehicleType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.plateNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.destination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entryDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.entryTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exitDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.exitTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isVisitor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.supplierName }) |
+            @Html.ActionLink("Details", "Details", new { id=item.supplierName }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.supplierName })
+        </td>
+    </tr>
+}
+
+</table>

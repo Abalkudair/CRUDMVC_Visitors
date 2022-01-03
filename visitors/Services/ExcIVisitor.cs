@@ -8,9 +8,22 @@ namespace visitors.Services
 {
     public class ExcIVisitor : IVisitor
     {
-        public Visitor Add(Visitor vistor)
+        private readonly VisitorsDbContext db;
+
+        public ExcIVisitor(VisitorsDbContext db)
         {
-            throw new NotImplementedException();
+            this.db = db;
+        }
+        public IEnumerable<Visitor> GetAll()
+        {
+            return from r in db.Visitors
+                   select r;
+        }
+
+        public void Add(Visitor vistor)
+        {
+            db.Visitors.Add(vistor);
+            db.SaveChanges();
         }
     }
 }

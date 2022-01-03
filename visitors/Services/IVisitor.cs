@@ -7,8 +7,9 @@ using visitors.Models;
 
 namespace visitors.Services
 {
-    internal interface IVisitor
+    public interface IVisitor
     {
-        Visitor Add(Visitor vistor);
+        IEnumerable<Visitor> GetAll();
+        void Add(Visitor vistor);
     }
 }
