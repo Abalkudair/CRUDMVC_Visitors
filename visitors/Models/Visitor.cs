@@ -19,6 +19,7 @@ namespace visitors.Models
         [Display(Name = "ID Number")]
 
         [Required]
+        [MinLength(10)]
         [MaxLength(10)]
         public string IDNumber { get; set; }
         [Display(Name = "Vehicle Type")]
@@ -27,6 +28,7 @@ namespace visitors.Models
 
         [Display(Name = "Plate Number")]
         [Required]
+        [MinLength(4)]
         [MaxLength(4)]
         public string plateNumber { get; set; }
         [Display(Name = "Distination")]

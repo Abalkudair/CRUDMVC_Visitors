@@ -43,5 +43,24 @@ namespace visitors.Controllers
         }
 
 
+        public ActionResult Edit(int id)
+        {
+            var model = db.Get(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Visitor visitor)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Update(visitor);
+                TempData["Message"] = "Done !";
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

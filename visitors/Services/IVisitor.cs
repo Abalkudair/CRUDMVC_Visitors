@@ -11,5 +11,7 @@ namespace visitors.Services
     {
         IEnumerable<Visitor> GetAll();
         void Add(Visitor vistor);
+        Visitor Get(int id);
+        void Update(Visitor visitor);
     }
 }
