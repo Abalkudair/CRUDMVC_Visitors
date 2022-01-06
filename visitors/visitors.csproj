@@ -203,6 +203,10 @@
     <Compile Include="Migrations\202201030925361_a.designer.cs">
       <DependentUpon>202201030925361_a.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201060757481_a1.cs" />
+    <Compile Include="Migrations\202201060757481_a1.designer.cs">
+      <DependentUpon>202201060757481_a1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Visitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -248,6 +252,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Visitors\Index.cshtml" />
     <Content Include="Views\Visitors\Create.cshtml" />
+    <Content Include="Views\Visitors\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -289,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201030925361_a.resx">
       <DependentUpon>202201030925361_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201060757481_a1.resx">
+      <DependentUpon>202201060757481_a1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -34,7 +34,7 @@ namespace visitors.Services
         public void Update(Visitor visitor)
         {
             var entry = db.Entry(visitor);
-            
+            entry.State = EntityState.Modified;
             db.SaveChanges();
         }
     }
