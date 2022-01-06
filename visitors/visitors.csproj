@@ -207,7 +207,12 @@
     <Compile Include="Migrations\202201060757481_a1.designer.cs">
       <DependentUpon>202201060757481_a1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201060839065_change.cs" />
+    <Compile Include="Migrations\202201060839065_change.designer.cs">
+      <DependentUpon>202201060839065_change.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\TypeofVehicles.cs" />
     <Compile Include="Models\Visitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ExcIVisitor.cs" />
@@ -297,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201060757481_a1.resx">
       <DependentUpon>202201060757481_a1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201060839065_change.resx">
+      <DependentUpon>202201060839065_change.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

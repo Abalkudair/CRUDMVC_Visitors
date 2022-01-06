@@ -19,17 +19,15 @@ namespace visitors.Models
         [Display(Name = "ID Number")]
 
         [Required]
-        [MinLength(10)]
-        [MaxLength(10)]
+        [MinLength(10, ErrorMessage = "Min 10"), MaxLength(10, ErrorMessage = "Max 10")]
         public string IDNumber { get; set; }
         [Display(Name = "Vehicle Type")]
         [Required]
-        public string vehicleType { get; set; }
+        public TypeofVehicles vehicleType { get; set; }
 
         [Display(Name = "Plate Number")]
         [Required]
-        [MinLength(4)]
-        [MaxLength(4)]
+        [MinLength(4, ErrorMessage = "Min 4"), MaxLength(4, ErrorMessage = "Max 4")]
         public string plateNumber { get; set; }
         [Display(Name = "Distination")]
 
