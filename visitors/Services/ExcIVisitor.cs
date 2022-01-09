@@ -37,5 +37,12 @@ namespace visitors.Services
             entry.State = EntityState.Modified;
             db.SaveChanges();
         }
+
+        public void Delete(int id)
+        {
+            var visitor = db.Visitors.Find(id);
+            db.Visitors.Remove(visitor);
+            db.SaveChanges();
+        }
     }
 }

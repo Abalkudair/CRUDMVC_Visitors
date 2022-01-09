@@ -211,6 +211,18 @@
     <Compile Include="Migrations\202201060839065_change.designer.cs">
       <DependentUpon>202201060839065_change.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201061135450_q1.cs" />
+    <Compile Include="Migrations\202201061135450_q1.designer.cs">
+      <DependentUpon>202201061135450_q1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201090438321_ale.cs" />
+    <Compile Include="Migrations\202201090438321_ale.designer.cs">
+      <DependentUpon>202201090438321_ale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201090545077_qwpe.cs" />
+    <Compile Include="Migrations\202201090545077_qwpe.designer.cs">
+      <DependentUpon>202201090545077_qwpe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\TypeofVehicles.cs" />
     <Compile Include="Models\Visitor.cs" />
@@ -258,6 +270,7 @@
     <Content Include="Views\Visitors\Index.cshtml" />
     <Content Include="Views\Visitors\Create.cshtml" />
     <Content Include="Views\Visitors\Edit.cshtml" />
+    <Content Include="Views\Visitors\Remove.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -299,12 +312,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201030925361_a.resx">
       <DependentUpon>202201030925361_a.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201060757481_a1.resx">
       <DependentUpon>202201060757481_a1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201060839065_change.resx">
       <DependentUpon>202201060839065_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201061135450_q1.resx">
+      <DependentUpon>202201061135450_q1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201090438321_ale.resx">
+      <DependentUpon>202201090438321_ale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201090545077_qwpe.resx">
+      <DependentUpon>202201090545077_qwpe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

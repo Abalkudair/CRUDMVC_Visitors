@@ -62,5 +62,20 @@ namespace visitors.Controllers
         }
 
 
+        public ActionResult Remove(int id)
+        {
+            var model = db.Get(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Remove(int id,FormCollection form)
+        {
+            db.Delete(id);
+            TempData["Message"] = "Done !";
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

@@ -36,22 +36,26 @@ namespace visitors.Models
         [Display(Name = "Entry Date")]
 
         [Required]
-        [MaxLength(10)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public string entryDate { get; set; }
         [Display(Name = "Entry Time")]
 
         [Required]
-        [MaxLength(5)]
+        [DataType(DataType.Time)]
+        [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
         public string entryTime { get; set; }
         [Display(Name = "Exit Date")]
 
         [Required]
-        [MaxLength(10)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public string exitDate { get; set; }
         [Display(Name = "Exit Time")]
 
         [Required]
-        [MaxLength(5)]
+        [DataType(DataType.Time)]
+        [DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = true)]
         public string exitTime { get; set; }
         [Display(Name = "Is he Visitor ?")]
         [Required]

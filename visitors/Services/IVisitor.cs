@@ -13,5 +13,7 @@ namespace visitors.Services
         void Add(Visitor vistor);
         Visitor Get(int id);
         void Update(Visitor visitor);
+
+        void Delete(int id);
     }
 }
